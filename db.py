@@ -2,9 +2,6 @@ from sqlalchemy import create_engine, MetaData, Table, Column, String, Integer, 
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 
-from datetime import date
-import random
-
 engine = create_engine('sqlite:///users.db',echo=True, connect_args={"check_same_thread": False})
 con = engine.connect()
 
